@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luyện đề Kinh tế vi mô</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">📘 MicroStudy</a>
+    <nav><a href="bai-2.html">Bài 2</a><a href="bai-5.html">Bài 5</a><a href="luyen-de.html">Luyện đề</a></nav>
+    <button id="themeBtn" class="ghost">🌙</button>
+  </header>
+  <main class="container">
+    <section class="quiz-hero">
+      <p class="eyebrow">Luyện đề có chấm điểm</p><h1>Ngân hàng câu hỏi Bài 2 + Bài 5</h1>
+      <p>Chọn bài, chọn dạng câu hỏi, làm bài rồi bấm nộp. Web sẽ báo điểm, câu sai, đáp án đúng và giải thích.</p>
+      <div class="quiz-tools">
+        <select id="filterLesson"><option value="all">Tất cả bài</option><option value="bai2">Bài 2 - Cung cầu</option><option value="bai5">Bài 5 - Sản xuất/chi phí</option></select>
+        <select id="filterLevel"><option value="all">Tất cả dạng</option></select>
+        <input id="amountInput" type="number" min="5" max="80" value="20" title="Số câu" />
+        <button class="btn" id="restartBtn" type="button">Trộn câu hỏi</button>
+      </div>
+    </section>
+    <form id="quizForm" class="quiz-list"></form>
+    <section id="resultBox" class="result hidden"></section>
+    <section class="quiz-hero mini">
+      <p class="eyebrow">Bài tự luyện tính toán</p>
+      <h1>Lời giải mẫu để học cách làm</h1>
+      <p>Các bài dạng tính toán và tự luận được để dạng mở. Bấm vào từng câu để xem lời giải.</p>
+    </section>
+    <div id="practiceBox" class="practice-list"></div>
+  </main>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/quiz.js"></script>
+</body>
+</html>
